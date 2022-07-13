@@ -16,7 +16,7 @@ class Page extends BasePage
 				<a href=\"//feet9.net\">Feet9.Net Team</a>
 			</span>
 			<hr />
-			<span style=\"font-size: 0.7em;\">
+			<span style=\"font-size: 10px;\">
 				Page generated $generated / Media &copy; their respective owners
 				<br>
 				<a href=\"//feet9.net\wiki\rules\">Rules</a> /
