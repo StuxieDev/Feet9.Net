@@ -4,17 +4,17 @@
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 BODY {
-	background: url(bg.png) #FAB9B9;
+	background: url(bg.png) #A1DEE2;
 	font-family: "Arial", sans-serif;
 	font-size: 14px;
 	margin: 0;
 }
 #header {
-	border-bottom: 1px solid #CF8C8C;
+	border-bottom: 1px solid #74B2B7;
 	margin-top: 0;
 	margin-bottom: 16px;
 	padding: 8px;
-	background: #FAB9B9;
+	background: #A1DEE2;
 	text-align: center;
 }
 H1 {
@@ -54,25 +54,25 @@ TD {
 	border: 1px solid #882;
 }
 
-TABLE.zebra {background: #FAB9B9; border-collapse: collapse; border: 1px solid #CF8C8C;}
-TABLE.zebra TD {font-size: 0.8em;margin: 0;	border-top: 1px solid #CF8C8C;	padding: 2px;}
-TABLE.zebra TR:nth-child(odd) {background: #FAB9B9;}
-TABLE.zebra TR:nth-child(even) {background: #FAB9B9;}
+TABLE.zebra {background: #A1DEE2; border-collapse: collapse; border: 1px solid #74B2B7;}
+TABLE.zebra TD {font-size: 0.8em;margin: 0;	border-top: 1px solid #74B2B7;	padding: 2px;}
+TABLE.zebra TR:nth-child(odd) {background: #A1DEE2;}
+TABLE.zebra TR:nth-child(even) {background: #A1DEE2;}
 
 FOOTER {
 	clear: both;
 	padding: 8px;
 	font-size: 0.7em;
 	text-align: center;
-	border-top: 1px solid #CF8C8C;
-	background: #FAB9B9;
+	border-top: 1px solid #74B2B7;
+	background: #A1DEE2;
 }
 
 
-A         {color: #9E0303; text-decoration: none; font-weight: bold;}
-A:hover   {color: #9E0303; text-decoration: underline;}
-A:visited {color: #9E0303; text-decoration: none}
-A:active  {color: #9E0303; text-decoration: underline;}
+A         {color: #03559e; text-decoration: none; font-weight: bold;}
+A:hover   {color: #03559e; text-decoration: underline;}
+A:visited {color: #03559e; text-decoration: none}
+A:active  {color: #03559e; text-decoration: underline;}
 
 UL {
 	text-align: left;
@@ -118,8 +118,8 @@ NAV SELECT {
 }
 
 .comment .info {
-	background: #FAB9B9;
-	border: 1px solid #CF8C8C;
+	background: #A1DEE2;
+	border: 1px solid #74B2B7;
 }
 
 .more:after {
@@ -188,17 +188,17 @@ NAV SECTION:first-child H3 {
 }
 
 SECTION>.blockbody, .comment, .setupblock {
-	background: #FAB9B9;
+	background: #A1DEE2;
 	margin: 8px;
-	border: 1px solid #CF8C8C;
+	border: 1px solid #74B2B7;
 	padding: 8px;
 }
 
 SECTION>H3 {
 	text-align: center;
-	background: #FAB9B9;
+	background: #A1DEE2;
 	margin: 8px;
-	border: 1px solid #CF8C8C;
+	border: 1px solid #74B2B7;
 	padding: 8px;
 }
 
@@ -211,8 +211,8 @@ SECTION>H3 {
 	margin-bottom: 8px;
 }
 .thumb IMG {
-	border: 1px solid #CF8C8C;
-	background: #FAB9B9;
+	border: 1px solid #74B2B7;
+	background: #A1DEE2;
 	padding: 4px;
 }
 

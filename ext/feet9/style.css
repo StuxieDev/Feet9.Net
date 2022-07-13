@@ -10,7 +10,7 @@ BODY.censored FOOTER {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: #FAB9B9;
+	background: #A1DEE2;
 	opacity: 0.75;
 	z-index: 999999999999999999999;
 }
@@ -21,8 +21,8 @@ BODY.censored FOOTER {
 	right: 20%;
 	text-align: center;
 	font-size: 2em;
-	background: #FAB9B9;
-	border: 1px solid #CF8C8C;
+	background: #A1DEE2;
+	border: 1px solid #74B2B7;
 	z-index: 9999999999999999999999;
 }
 @media (max-width: 1024px) {

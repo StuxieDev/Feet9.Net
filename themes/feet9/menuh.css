@@ -35,7 +35,7 @@ a:active.menu { color: #FF0000; text-decoration: none; }
 #menuh a
 	{
 	text-align: center;
-	background: #FAB9B9;
+	background: #A1DEE2;
 	display:block;
 	white-space:nowrap;
     margin: 0;
@@ -44,7 +44,7 @@ a:active.menu { color: #FF0000; text-decoration: none; }
 
 #menuh a, #menuh a:visited	/* menu at rest */
 	{
-	color: #9E0303;
+	color: #03559e;
 	text-decoration:none;
 	}
 

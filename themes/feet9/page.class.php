@@ -51,21 +51,32 @@ class Page extends BasePage
 <html lang="en">
 	<head>
 		<title>{$this->title}</title>
-		<meta name="description" content="Feet9.Net, The Best Foot Fetish Content"/>
-		<meta name="viewport" content="width=1024">
-		<meta name="theme-color" content="#FAB9B9">
+		<meta name="description" content="The Best Foot Fetish Content"/>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+		<meta name="theme-color" content="#A1DEE2">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="//feet9.net/themes/feet9/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="//feet9.net/themes/feet9/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="//feet9.net/themes/feet9/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="//feet9.net/themes/feet9/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="//feet9.net/themes/feet9/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="//feet9.net/themes/feet9/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="//feet9.net/themes/feet9/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="//feet9.net/themes/feet9/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="//feet9.net/themes/feet9/apple-touch-icon-180x180.png" />
 		<link rel="stylesheet" href="$data_href/themes/$theme_name/menuh.css?_=1" type="text/css">
-$header_html
+        $header_html
 
-		<script defer src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
-		<script defer src="https://unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
+		<script defer src="//unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/polyfills.js"></script>
+		<script defer src="//unpkg.com/webp-hero@0.0.0-dev.21/dist-cjs/webp-hero.bundle.js"></script>
 		<script>
 		document.addEventListener('DOMContentLoaded', () => {
 			var webpMachine = new webpHero.WebpMachine()
 			webpMachine.polyfillDocument()
 		});
 		</script>
-		<script src="/themes/feet9/prebid-ads.js"></script>
+		<script src="//feet9.net/themes/feet9/prebid-ads.js"></script>
 		<script>
 		function makeid(length) {
 			var result           = '';
@@ -129,11 +140,11 @@ EOD;
 
 		<footer>
 <span style="font-size: 12px;">
-    <a href="http://feet9.net/wiki/Terms%20of%20use">Terms of use</a>
+    <a href="//feet9.net/wiki/Terms%20of%20use">Terms of use</a>
     !!!
-    <a href="http://feet9.net/wiki/Privacy%20policy">Privacy policy</a>
+    <a href="//feet9.net/wiki/Privacy%20policy">Privacy policy</a>
     !!!
-    <a href="http://feet9.net/wiki/2257">18 U.S.C. &sect;2257</a><br />
+    <a href="//feet9.net/wiki/2257">18 U.S.C. &sect;2257</a><br />
 </span>
 <hr />
 <br>
@@ -144,7 +155,7 @@ Thank you!
 		</footer>
 
 		<!-- BEGIN EroAdvertising ADSPACE CODE -->
-<!--<script type="text/javascript" language="javascript" charset="utf-8" src="https://adspaces.ero-advertising.com/adspace/158168.js"></script>-->
+<!--<script type="text/javascript" language="javascript" charset="utf-8" src="//adspaces.ero-advertising.com/adspace/158168.js"></script>-->
 <!-- END EroAdvertising ADSPACE CODE -->
 	</body>
 </html>

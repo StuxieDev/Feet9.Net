@@ -12,9 +12,20 @@ class Feet9HomeTheme extends HomeTheme
 <html lang="en">
 	<head>
 		<title>$sitename</title>
+		<meta name="description" content="The Best Foot Fetish Content"/>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-		<meta name="theme-color" content="#FAB9B9">
+		<meta name="theme-color" content="#A1DEE2">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="//feet9.net/themes/feet9/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="//feet9.net/themes/feet9/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="//feet9.net/themes/feet9/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="//feet9.net/themes/feet9/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="//feet9.net/themes/feet9/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="//feet9.net/themes/feet9/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="//feet9.net/themes/feet9/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="//feet9.net/themes/feet9/apple-touch-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="//feet9.net/themes/feet9/apple-touch-icon-180x180.png" />
 		$hh
 		<style>
 			div#front-page h1 {font-size: 4em; margin-top: 2em; margin-bottom: 0; text-align: center; border: none; background: none; box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;}
@@ -53,7 +64,7 @@ EOD
 		";
         return "
 		<div id='front-page'>
-			<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>
+			<h1><a style='text-decoration: none;' href='".make_link()."'><img alt="logo" src="//feet9.net/themes/feet9/feet9_logo_top.png" style="height: 104px;"/></a></h1>
 			$main_links_html
 			$search_html
 			$message_html
@@ -61,7 +72,7 @@ EOD
 			<div class='space' id='foot'>
 
 <!-- JuicyAds v3.1 -->
-<!--<script type='text/javascript' data-cfasync='false' async src='https://poweredby.jads.co/js/jads.js'></script>
+<!--<script type='text/javascript' data-cfasync='false' async src='//poweredby.jads.co/js/jads.js'></script>
 <ins id='825625' data-width='908' data-height='270'></ins>
 <script type='text/javascript' data-cfasync='false' async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':825625});</script>
 -->
@@ -69,7 +80,7 @@ EOD
 
 				<small><small>
 				$contact_link Serving $num_comma posts &ndash;
-				Running <a href='http://code.shishnet.org/shimmie2/'>Shimmie2</a>
+				Running <a href='//code.shishnet.org/shimmie2/'>Shimmie2</a>
 				</small></small>
 			</div>
 		</div>";
