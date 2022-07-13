@@ -17,7 +17,7 @@ class Feet9HomeTheme extends HomeTheme
 		<meta name="theme-color" content="#A1DEE2">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="//feet9.net/themes/feet9/favicon.ico" type="image/x-icon" />
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" href="//feet9.net/themes/feet9/apple-touch-icon.png" />
 		<link rel="apple-touch-icon" sizes="57x57" href="//feet9.net/themes/feet9/apple-touch-icon-57x57.png" />
 		<link rel="apple-touch-icon" sizes="72x72" href="//feet9.net/themes/feet9/apple-touch-icon-72x72.png" />
 		<link rel="apple-touch-icon" sizes="76x76" href="//feet9.net/themes/feet9/apple-touch-icon-76x76.png" />
@@ -53,6 +53,8 @@ EOD
         $message_html = empty($main_text) ? "" : "<div class='space' id='message'>$main_text</div>";
         $counter_html = empty($counter_text) ? "" : "<div class='space' id='counter'>$counter_text</div>";
         $contact_link = empty($contact_link) ? "" : "<br><a href='$contact_link'>Contact</a> &ndash;";
+		$logo_html = "<a style='text-decoration: none;' href='".make_link()."'><img alt='logo' src='//feet9.net/themes/feet9/feet9_logo_top.png' style='height: 104px;'/></a>";
+		$sitename_html = "<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>";
         $search_html = "
 			<div class='space' id='search'>
 				<form action='".make_link("post/list")."' method='GET'>
@@ -64,8 +66,7 @@ EOD
 		";
         return "
 		<div id='front-page'>
-			<!--<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>-->
-			<a style='text-decoration: none;' href='".make_link()."'><img alt='logo' src='//feet9.net/themes/feet9/feet9_logo_top.png' style='height: 104px;'/></a>
+			$logo_html
 			$main_links_html
 			$search_html
 			$message_html
