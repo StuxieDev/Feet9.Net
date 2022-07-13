@@ -15,13 +15,15 @@ class CustomHomeTheme extends HomeTheme
 				<a href=\"//feet9.net\">Feet9.Net Team</a>
 			</span>
 			<hr />
-			Page generated $generated / Media &copy; their respective owners
-			<br>
-			<a href=\"//feet9.net\wiki\rules\">Rules</a> /
-			<a href=\"//feet9.net/wiki/terms\">Terms of use</a> /
-			<a href=\"//feet9.net/wiki/privacy\">Privacy policy</a> /
-			<a href=\"//feet9.net/wiki/2257\">18 U.S.C. &sect;2257</a>
-			$contact
+			<span style=\"font-size: 0.7em;\">
+				Page generated $generated / Media &copy; their respective owners
+				<br>
+				<a href=\"//feet9.net\wiki\rules\">Rules</a> /
+				<a href=\"//feet9.net/wiki/terms\">Terms of use</a> /
+				<a href=\"//feet9.net/wiki/privacy\">Privacy policy</a> /
+				<a href=\"//feet9.net/wiki/2257\">18 U.S.C. &sect;2257</a>
+				$contact
+			</span>
         ";
     }
     public function display_page(Page $page, string $sitename, string $base_href, string $theme_name, string $body): void
