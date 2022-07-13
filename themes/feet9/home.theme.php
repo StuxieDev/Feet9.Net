@@ -53,8 +53,8 @@ EOD
         $message_html = empty($main_text) ? "" : "<div class='space' id='message'>$main_text</div>";
         $counter_html = empty($counter_text) ? "" : "<div class='space' id='counter'>$counter_text</div>";
         $contact_link = empty($contact_link) ? "" : "<br><a href='$contact_link'>Contact</a> &ndash;";
-		$logo_html = "<a style='text-decoration: none;' href='".make_link()."'><img alt='logo' src='//feet9.net/themes/feet9/feet9_logo_top.png' style='height: 104px;'/></a>";
 		$sitename_html = "<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>";
+		$sitename = "<img alt='logo' src='//feet9.net/themes/feet9/feet9_logo_top.png' style='height: 104px;'/>";
         $search_html = "
 			<div class='space' id='search'>
 				<form action='".make_link("post/list")."' method='GET'>
@@ -66,7 +66,7 @@ EOD
 		";
         return "
 		<div id='front-page'>
-			$logo_html
+			<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>
 			$main_links_html
 			$search_html
 			$message_html
