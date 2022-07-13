@@ -64,7 +64,8 @@ EOD
 		";
         return "
 		<div id='front-page'>
-			<h1><a style='text-decoration: none;' href='".make_link()."'><img alt="logo" src="//feet9.net/themes/feet9/feet9_logo_top.png" style="height: 104px;"/></a></h1>
+			<!--<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>-->
+			<a style='text-decoration: none;' href='".make_link()."'><img alt='logo' src='//feet9.net/themes/feet9/feet9_logo_top.png" style="height: 104px;'/></a>
 			$main_links_html
 			$search_html
 			$message_html
