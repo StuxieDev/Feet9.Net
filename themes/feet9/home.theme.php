@@ -1,6 +1,6 @@
 <?php
 
-class Feet9HomeTheme extends HomeTheme
+class CustomHomeTheme extends HomeTheme
 {
     public function display_page(Page $page, string $sitename, string $base_href, string $theme_name, string $body): void
     {

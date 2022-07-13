@@ -17,8 +17,8 @@ if ( // kill these glitched requests immediately
 
 class Feet9Extension extends Extension
 {
-    /** @var Rule34Theme */
-    protected ?Themelet $theme;
+    /** @var Feet9Theme */
+    protected ?Feet9Themelet $theme;
 
     public function onImageDeletion(ImageDeletionEvent $event)
     {
@@ -109,7 +109,7 @@ class Feet9Extension extends Extension
             sd_notify_watchdog();
         }
 
-        if ($event->page_matches("rule34/comic_admin")) {
+        if ($event->page_matches("feet9/comic_admin")) {
             if ($user->can(Permissions::CHANGE_SETTING) && $user->check_auth_token()) {
                 $input = validate_input([
                     'user_id' => 'user_id,exists',

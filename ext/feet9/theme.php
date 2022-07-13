@@ -5,7 +5,7 @@ use function MicroHTML\INPUT;
 use function MicroHTML\LABEL;
 use function MicroHTML\BR;
 
-class Feet9Theme extends Themelet
+class Feet9Theme extends Feet9Themelet
 {
     public function show_comic_changer(User $duser, bool $current_state): void
     {
