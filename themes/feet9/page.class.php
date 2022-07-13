@@ -66,7 +66,7 @@ class Page extends BasePage
         assert(!is_null($query));  # used in header.inc, do not remove :P
         $flash_html = $this->flash ? "<b id='flash'>".nl2br(html_escape(implode("\n", $this->flash)))."</b>" : "";
         $generated = autodate(date('c'));
-        $footer_html = custom_footer_html();
+        $footer_html = $this->custom_footer_html();
 
         print <<<EOD
 <!DOCTYPE html>

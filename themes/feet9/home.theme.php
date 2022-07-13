@@ -77,7 +77,7 @@ EOD
         $contact_link = empty($contact_link) ? "" : "<br><a href='$contact_link'>Contact</a> &ndash;";
 		$sitename_html = "<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>";
 		$logo_html = "<img alt='logo' src='//feet9.net/themes/feet9/feet9_logo_top.png' style='height: 104px;'/>";
-		$footer_html = custom_footer_html();
+		$footer_html = $this->custom_footer_html();
         $search_html = "
 			<div class='space' id='search'>
 				<form action='".make_link("post/list")."' method='GET'>
