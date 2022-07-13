@@ -46,11 +46,11 @@
 		</li>
 	</ul>-->
     
-	<ul>
+	<!--<ul>
 		<li><a href="#" class="top_parent">Community &#9660;</a>
 		<ul>
-			<li><a href="#" class="sub_option">Feet9.Net Forums (Coming Soon)</a></li>
-			<!--<li><a href="#" class="parent">Coming Soon</a>
+			<li><a href="#" class="sub_option">Feet9.Net Forums</a></li>
+			<li><a href="#" class="parent">Coming Soon</a>
 			<ul>
 				<li><a href="#" class="sub_option">Coming Soon</a></li>
 				<li><a href="#" target="new" class="sub_option">Coming Soon</a></li>
@@ -58,7 +58,7 @@
 			</li>-->
 		</ul>
 		</li>
-	</ul>
+	</ul>-->
 
 	<ul>
 		<li><a href="//feet9.net/post/list" class="top_parent">Help &#9660;</a>
@@ -78,7 +78,7 @@
 	</ul>
 	
 	<ul>
-		<li><a class="menu top_parent" href="//feet9.net/wiki/Notes">ANNOUNCEMENTS</a></li>
+		<li><a class="menu top_parent" href="//feet9.net/wiki/Notes">Announcements</a></li>
 	</ul>
 	
 </div>
