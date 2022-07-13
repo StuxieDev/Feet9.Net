@@ -155,8 +155,7 @@ EOD;
 
 		<article>
 			$flash_html
-			<!-- <h2>Database reboot will be happening in a bit, expect a few minutes of downtime~</h2>
- -->
+			<!-- <h2>Database reboot will be happening in a bit, expect a few minutes of downtime~</h2>-->
 			$main_block_html
 		</article>
 
@@ -165,8 +164,8 @@ EOD;
 		</footer>
 
 		<!-- BEGIN EroAdvertising ADSPACE CODE -->
-<!--<script type="text/javascript" language="javascript" charset="utf-8" src="//adspaces.ero-advertising.com/adspace/158168.js"></script>-->
-<!-- END EroAdvertising ADSPACE CODE -->
+		<!--<script type="text/javascript" language="javascript" charset="utf-8" src="//adspaces.ero-advertising.com/adspace/158168.js"></script>-->
+		<!-- END EroAdvertising ADSPACE CODE -->
 	</body>
 </html>
 EOD;
