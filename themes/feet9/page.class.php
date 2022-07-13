@@ -3,7 +3,7 @@
 declare(strict_types=1);
 class Page extends BasePage
 {
-	function custom_footer_html(): string
+	function custom_footer_html()
     {
         $debug = get_debug_info();
         $contact_link = contact_link();

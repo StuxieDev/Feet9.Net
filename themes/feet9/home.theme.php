@@ -2,7 +2,7 @@
 
 class CustomHomeTheme extends HomeTheme
 {
-	function custom_footer_html(): string
+	function custom_footer_html()
     {
         $debug = get_debug_info();
         $contact_link = contact_link();
