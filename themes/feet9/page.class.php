@@ -1,7 +1,7 @@
 <?php
 
 declare(strict_types=1);
-class Feet9Page extends BasePage
+class Page extends BasePage
 {
     public function render()
     {
