@@ -10,7 +10,7 @@ class CustomHomeTheme extends HomeTheme
 		$generated = autodate(date('c'));
 
         return "
-			<span style="font-size: 12px;">
+			<span style=\"font-size: 12px;\">
 				<a href=\"//github.com/feet9/feetbooru\">FeetBooru</a> &copy;
 				<a href=\"//feet9.net\">Feet9.Net Team</a>
 			</span>
