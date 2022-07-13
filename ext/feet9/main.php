@@ -18,7 +18,7 @@ if ( // kill these glitched requests immediately
 class Feet9Extension extends Extension
 {
     /** @var Feet9Theme */
-    protected ?Feet9Themelet $theme;
+    protected ?Themelet $theme;
 
     public function onImageDeletion(ImageDeletionEvent $event)
     {

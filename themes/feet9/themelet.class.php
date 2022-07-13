@@ -1,6 +1,6 @@
 <?php
 
-class Feet9Themelet extends BaseThemelet
+class Themelet extends BaseThemelet
 {
     public function build_thumb_html(Image $image): string
     {
