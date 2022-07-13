@@ -1,6 +1,6 @@
 <?php
 
-class Feet9TagEditTheme extends TagEditTheme
+class CustomTagEditTheme extends TagEditTheme
 {
     public function get_tag_editor_html(Image $image): string
     {

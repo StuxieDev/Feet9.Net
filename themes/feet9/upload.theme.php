@@ -3,7 +3,7 @@
 use MicroHTML\HTMLElement;
 use function MicroHTML\A;
 
-class Feet9UploadTheme extends UploadTheme
+class CustomUploadTheme extends UploadTheme
 {
     public function display_block(Page $page): void
     {

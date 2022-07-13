@@ -3,6 +3,28 @@
 declare(strict_types=1);
 class Page extends BasePage
 {
+	function custom_footer_html(): string
+    {
+        $debug = get_debug_info();
+        $contact_link = contact_link();
+        $contact = empty($contact_link) ? "" : " / <a href='$contact_link'>Contact</a>";
+		$generated = autodate(date('c'));
+
+        return "
+			<span style="font-size: 12px;">
+				<a href=\"//github.com/feet9/feetbooru\">FeetBooru</a> &copy;
+				<a href=\"//feet9.net\">Feet9.Net Team</a>
+			</span>
+			<hr />
+			Page generated $generated / Media &copy; their respective owners
+			<br>
+			<a href=\"//feet9.net\wiki\rules\">Rules</a> /
+			<a href=\"//feet9.net/wiki/terms\">Terms of use</a> /
+			<a href=\"//feet9.net/wiki/privacy\">Privacy policy</a> /
+			<a href=\"//feet9.net/wiki/2257\">18 U.S.C. &sect;2257</a>
+			$contact
+        ";
+    }
     public function render()
     {
         global $config, $user;
@@ -44,7 +66,7 @@ class Page extends BasePage
         assert(!is_null($query));  # used in header.inc, do not remove :P
         $flash_html = $this->flash ? "<b id='flash'>".nl2br(html_escape(implode("\n", $this->flash)))."</b>" : "";
         $generated = autodate(date('c'));
-        $footer_html = $this->footer_html();
+        $footer_html = custom_footer_html();
 
         print <<<EOD
 <!DOCTYPE html>
@@ -139,19 +161,7 @@ EOD;
 		</article>
 
 		<footer>
-<span style="font-size: 12px;">
-    <a href="//feet9.net/wiki/Terms%20of%20use">Terms of use</a>
-    !!!
-    <a href="//feet9.net/wiki/Privacy%20policy">Privacy policy</a>
-    !!!
-    <a href="//feet9.net/wiki/2257">18 U.S.C. &sect;2257</a><br />
-</span>
-<hr />
-<br>
-Thank you!
-
-            Page generated $generated.
-			$footer_html
+		$footer_html
 		</footer>
 
 		<!-- BEGIN EroAdvertising ADSPACE CODE -->

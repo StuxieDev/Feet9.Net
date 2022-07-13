@@ -15,7 +15,7 @@ if ( // kill these glitched requests immediately
     die("No");
 }
 
-class Feet9Extension extends Extension
+class Feet9 extends Extension
 {
     /** @var Feet9Theme */
     protected ?Themelet $theme;

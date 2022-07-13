@@ -18,7 +18,7 @@ use function MicroHTML\P;
 use function MicroHTML\SELECT;
 use function MicroHTML\OPTION;
 
-class Feet9UserPageTheme extends UserPageTheme
+class CustomUserPageTheme extends UserPageTheme
 {
     public function display_user_block(Page $page, User $user, $parts)
     {

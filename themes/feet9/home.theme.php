@@ -1,7 +1,29 @@
 <?php
 
-class Feet9HomeTheme extends HomeTheme
+class CustomHomeTheme extends HomeTheme
 {
+	function custom_footer_html(): string
+    {
+        $debug = get_debug_info();
+        $contact_link = contact_link();
+        $contact = empty($contact_link) ? "" : " / <a href='$contact_link'>Contact</a>";
+		$generated = autodate(date('c'));
+
+        return "
+			<span style="font-size: 12px;">
+				<a href=\"//github.com/feet9/feetbooru\">FeetBooru</a> &copy;
+				<a href=\"//feet9.net\">Feet9.Net Team</a>
+			</span>
+			<hr />
+			Page generated $generated / Media &copy; their respective owners
+			<br>
+			<a href=\"//feet9.net\wiki\rules\">Rules</a> /
+			<a href=\"//feet9.net/wiki/terms\">Terms of use</a> /
+			<a href=\"//feet9.net/wiki/privacy\">Privacy policy</a> /
+			<a href=\"//feet9.net/wiki/2257\">18 U.S.C. &sect;2257</a>
+			$contact
+        ";
+    }
     public function display_page(Page $page, string $sitename, string $base_href, string $theme_name, string $body): void
     {
         $page->set_mode("data");
@@ -54,7 +76,8 @@ EOD
         $counter_html = empty($counter_text) ? "" : "<div class='space' id='counter'>$counter_text</div>";
         $contact_link = empty($contact_link) ? "" : "<br><a href='$contact_link'>Contact</a> &ndash;";
 		$sitename_html = "<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>";
-		$sitename = "<img alt='logo' src='//feet9.net/themes/feet9/feet9_logo_top.png' style='height: 104px;'/>";
+		$logo_html = "<img alt='logo' src='//feet9.net/themes/feet9/feet9_logo_top.png' style='height: 104px;'/>";
+		$footer_html = custom_footer_html();
         $search_html = "
 			<div class='space' id='search'>
 				<form action='".make_link("post/list")."' method='GET'>
@@ -66,24 +89,19 @@ EOD
 		";
         return "
 		<div id='front-page'>
-			<h1><a style='text-decoration: none;' href='".make_link()."'><span>$sitename</span></a></h1>
+			<h1><a style='text-decoration: none;' href='".make_link()."'><span>$logo_html</span></a></h1>
 			$main_links_html
 			$search_html
 			$message_html
 			$counter_html
 			<div class='space' id='foot'>
-
-<!-- JuicyAds v3.1 -->
-<!--<script type='text/javascript' data-cfasync='false' async src='//poweredby.jads.co/js/jads.js'></script>
-<ins id='825625' data-width='908' data-height='270'></ins>
-<script type='text/javascript' data-cfasync='false' async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':825625});</script>
--->
-<!--JuicyAds END-->
-
-				<small><small>
-				$contact_link Serving $num_comma posts &ndash;
-				Running <a href='//code.shishnet.org/shimmie2/'>Shimmie2</a>
-				</small></small>
+				<!-- JuicyAds v3.1 -->
+				<!--<script type='text/javascript' data-cfasync='false' async src='//poweredby.jads.co/js/jads.js'></script>
+				<ins id='825625' data-width='908' data-height='270'></ins>
+				<script type='text/javascript' data-cfasync='false' async>(adsbyjuicy = window.adsbyjuicy || []).push({'adzone':825625});</script>
+				-->
+				<!--JuicyAds END-->
+				$footer_html
 			</div>
 		</div>";
     }
